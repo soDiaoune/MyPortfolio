@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="5dp"
+    android:background="@color/grey"
+
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.soulemane.myportfolio.MessageFragment"
+        android:layout_marginTop="1dp"
+        android:elevation="23dp"
+        android:paddingTop="10dp">
+
+        <!-- TODO: Update blank fragment layout -->
+
+
+
+
+        <TextView
+            android:text="Please feel free to leave any comment regarding your User Experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_marginTop="25dp"
+            android:gravity="left|center"
+            android:textSize="14sp"
+            android:fontFamily="serif"
+            android:typeface="serif"
+            android:layout_marginLeft="5dp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/tertiary_text_dark" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="top"
+
+            android:inputType="textMultiLine|textPersonName"
+            android:ems="10"
+            android:id="@+id/comment_sender"
+            android:hint="From"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/comment_border"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            android:fontFamily="serif" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="top"
+
+            android:inputType="textMultiLine|textPersonName"
+            android:ems="10"
+            android:id="@+id/ux_comment"
+            android:hint="Enter comment"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/comment_border"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/comment_border"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:text="Send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/send_message"
+                android:layout_marginStart="12dp"
+                android:id="@+id/textView2"
+                android:textStyle="normal|bold" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_send_black_24dp"
+                android:id="@+id/send_message"
+                android:layout_marginStart="127dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

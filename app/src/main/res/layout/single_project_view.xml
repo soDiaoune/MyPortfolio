@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="5dp"
+
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="5dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/project_type"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_purple"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:text="Occupation : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="68dp"
+            android:id="@+id/textView6"
+            android:textColor="@color/input_register_hint"
+            android:layout_marginLeft="10dp" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/project_type"
+            android:layout_height="1dp"
+            android:background="@color/com_facebook_button_border_color_focused" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/project_occupation"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_toEndOf="@+id/textView6"
+            android:textColor="@color/bg_main" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/project_date"
+            android:layout_above="@+id/project_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:layout_alignTop="@+id/project_type"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/ic_location_on_black_24dp"
+            android:id="@+id/imageView"
+            android:layout_alignBottom="@+id/project_location"
+            android:layout_alignStart="@+id/textView6" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/project_location"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="normal|italic" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/project_name"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textColor="@color/bodyTextColor"
+            android:layout_marginLeft="10dp"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:layout_above="@+id/project_occupation"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="View Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/project_detail"
+            android:textStyle="normal|bold|italic"
+            android:textColor="@color/buttonColor"
+            android:textSize="12sp"
+            android:layout_alignBottom="@+id/project_location"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/github_link"
+            android:autoLink="web"
+
+            android:layout_above="@+id/imageView"
+            android:layout_alignStart="@+id/project_location"
+            android:textStyle="normal|bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/ic_link_black_24dp"
+
+            android:id="@+id/imageView2"
+            android:layout_alignBottom="@+id/github_link"
+            android:layout_alignStart="@+id/textView6" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
