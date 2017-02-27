@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "427976354604",
+    "firebase_url": "https://myportfolio-71c6c.firebaseio.com",
+    "project_id": "myportfolio-71c6c",
+    "storage_bucket": "myportfolio-71c6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427976354604:android:da9cbd26de9d31d4",
+        "android_client_info": {
+          "package_name": "com.example.soulemane.myportfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427976354604-n85p7p514s8pdbb85bjqlqv2qjg4a7eg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv8P8LV-HuSDE78MLiExQZt5NOqS6tqJc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427976354604-n85p7p514s8pdbb85bjqlqv2qjg4a7eg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
